@@ -1,0 +1,24 @@
+{
+  "name": "eryx-runner",
+  "version": "1.0.0",
+  "description": "Isolated code execution service - fast, secure, multi-language",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "docker:build": "docker compose build",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.0.0",
+    "@hono/swagger-ui": "^0.6.1",
+    "@hono/zod-openapi": "^0.15.0",
+    "dockerode": "^4.0.0",
+    "hono": "^4.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.0"
+  }
+}
